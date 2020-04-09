@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/women1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear1">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wv_renovate"
+                android:layout_width="42dp"
+                android:layout_height="34dp"
+                android:layout_weight="2"
+                android:src="@drawable/renovate" />
+
+            <EditText
+                android:id="@+id/wv_edit"
+                android:layout_width="154dp"
+                android:layout_height="42dp"
+                android:layout_weight="5"
+                android:hint="@string/Search_Url"
+                android:theme="@style/MyEditText" />
+
+            <ImageView
+                android:id="@+id/wv_search"
+                android:layout_width="42dp"
+                android:layout_height="34dp"
+                android:layout_weight="2"
+                android:src="@drawable/search2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/wv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/home_page" />
+
+            <ImageView
+                android:id="@+id/wv_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/forward" />
+
+            <ImageView
+                android:id="@+id/wv_new_windows"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/windows" />
+
+            <ImageView
+                android:id="@+id/wv_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/settings" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
